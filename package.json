@@ -1,0 +1,28 @@
+{
+  "name": "solarwind-schema",
+  "version": "0.0.1",
+  "description": "Solarwind schema",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "ts-node": "ts-node",
+    "execute": "node dist/index.js",
+    "build": "tsc",
+    "migrate": "node --loader ts-node/esm migrate.ts",
+    "copy": "node --loader ts-node/esm copy.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "types": "./types/index.d.ts",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/cassandra-driver": "^4.2.0",
+    "@types/pg": "^8.10.2",
+    "cassandra-driver": "^4.6.4",
+    "pg": "^8.11.3"
+  }
+}

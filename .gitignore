@@ -1,0 +1,11 @@
+# dependencies
+/node_modules
+
+# generated files
+/dist
+
+# other
+.DS_Store
+.env
+/certs
+/postgres/certs
